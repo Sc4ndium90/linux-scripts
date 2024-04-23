@@ -29,5 +29,6 @@ sudo docker run -it \
 -p 8443:8443 \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 -e NEXTCLOUD_DATADIR="$dirname" \
+-e SKIP_DOMAIN_VALIDATION=true \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 nextcloud/all-in-one:latest
