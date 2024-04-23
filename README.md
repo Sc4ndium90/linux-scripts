@@ -4,3 +4,4 @@ To use this repository, you can clone it directly on the machine with `git clone
 
 # Applications
 - **Docker CE on Debian** (`docker-install_debian.sh`) : Install Docker CE with Compose plugin. Tested on Debian 12.5
+- **Jetbrains Space On-Premise Docker** (`jetbrains-space-onprem_docker.sh`) : Install Jetbrains Space On-Premise for Docker. Tested on Debian 12.5
