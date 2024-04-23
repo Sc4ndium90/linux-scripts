@@ -3,7 +3,7 @@
 echo "Installing Docker.."
 
 apt update && apt upgrade -y
-apt install ca-certificates curl
+apt install ca-certificates curl sudo
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 chmod a+r /etc/apt/keyrings/docker.asc
@@ -16,7 +16,7 @@ echo \
 apt update
 apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-echo "Specify a user that can use docker without root privileges:"
+echo "Specify a user (not root user) that can use docker without root privileges:"
 read userName
 
 usermod -aG docker $userName
