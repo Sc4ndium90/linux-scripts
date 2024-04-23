@@ -30,5 +30,7 @@ sudo docker run -it \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 -e NEXTCLOUD_DATADIR="$dirname" \
 -e SKIP_DOMAIN_VALIDATION=true \
+-e APACHE_PORT=11000 \
+-e APACHE_IP_BINDING=0.0.0.0 \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 nextcloud/all-in-one:latest
