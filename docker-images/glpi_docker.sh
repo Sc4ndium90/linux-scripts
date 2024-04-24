@@ -14,28 +14,28 @@ read -p "Database Name [glpi]" MARIADB_DATABASE
 
 if [ -z "$MARIADB_DATABASE" ];
 then
-   $MARIADB_DATABASE="glpi"
+   MARIADB_DATABASE="glpi"
 fi
 
 read -p "Root Password [glpi]" MARIADB_ROOT_PASSWORD
 
 if [ -z "$MARIADB_ROOT_PASSWORD" ];
 then
-   $MARIADB_ROOT_PASSWORD="glpi"
+   MARIADB_ROOT_PASSWORD="glpi"
 fi
 
 read -p "User Name [glpi]" MARIADB_USER
 
 if [ -z "$MARIADB_USER" ];
 then
-   $MARIADB_USER="glpi"
+   MARIADB_USER="glpi"
 fi
 
 read -p "User Password [glpi]" MARIADB_PASSWORD
 
 if [ -z "$MARIADB_PASSWORD" ];
 then
-   $MARIADB_PASSWORD="glpi"
+   MARIADB_PASSWORD="glpi"
 fi
 
 mkdir glpi-docker && cd glpi-docker
@@ -54,7 +54,7 @@ read -p "Specify the timezone (Europe/Paris i.e) [Europe/Paris]" TIMEZONE
 
 if [ -z "$TIMEZONE" ];
 then
-   $TIMEZONE="Europe/Paris"
+   TIMEZONE="Europe/Paris"
 fi
 
 # Output docker compose file configuration
