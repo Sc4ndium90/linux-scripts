@@ -13,5 +13,5 @@ apt update && apt full-upgrade
 sudo dpkg --purge --force-all firmware-ath9k-htc
 sudo apt --fix-broken install
 
-apt install proxmox-default-kernel
+apt install proxmox-default-kernel -y
 systemctl reboot
